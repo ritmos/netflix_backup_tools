@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "content_scripts": [ {
+    "exclude_globs":    [  ],
+    "include_globs":    [ "*" ],
+    "js":               [ "netflix_ratings_exporter.user.js" ],
+    "matches":          [ "https://www.netflix.com/MoviesYouveSeen"
+    ],
+    "run_at": "document_start"
+  } ],
+  "converted_from_user_script": true,
+  "description":  "Create a button at the bottom of www.netflix.com/MoviesYouveSeen to export your ratings",
+  "name":         "Netflix ratings exporter",
+  "version":      "1"
+}
